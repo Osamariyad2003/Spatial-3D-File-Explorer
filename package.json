@@ -1,0 +1,83 @@
+{
+  "name": "spatial-3d-file-explorer",
+  "displayName": "Spatial 3D File Explorer",
+  "description": "Real-time 3D node graph of your workspace files and folders — orbit, zoom, search, and click to open.",
+  "version": "0.1.0",
+  "publisher": "your-publisher-id",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Visualization",
+    "Other"
+  ],
+  "keywords": [
+    "3d",
+    "file explorer",
+    "graph",
+    "workspace",
+    "visualization",
+    "navigation",
+    "three.js",
+    "react-three-fiber"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/spatial-3d-file-explorer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/spatial-3d-file-explorer/issues"
+  },
+  "homepage": "https://github.com/your-username/spatial-3d-file-explorer#readme",
+  "main": "./dist/extension.js",
+  "activationEvents": [],
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "spatial3dExplorer",
+          "title": "3D Explorer",
+          "icon": "media/icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "spatial3dExplorer": [
+        {
+          "id": "spatial3dExplorer.view",
+          "name": "Spatial 3D",
+          "type": "webview"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "build": "node esbuild.mjs",
+    "watch": "node esbuild.mjs --watch",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.webview.json --noEmit",
+    "package": "vsce package --no-dependencies --out spatial-3d-file-explorer-${npm_package_version}.vsix",
+    "publish:vsce": "vsce publish --no-dependencies",
+    "publish:ovsx": "ovsx publish --no-dependencies --packagePath spatial-3d-file-explorer-${npm_package_version}.vsix",
+    "release:tag": "git tag v${npm_package_version} && git push origin v${npm_package_version}",
+    "vscode:prepublish": "node esbuild.mjs --production"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@types/three": "^0.161.0",
+    "@types/vscode": "^1.85.0",
+    "@vscode/vsce": "^3.2.0",
+    "esbuild": "^0.20.0",
+    "ovsx": "^0.10.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.92.0",
+    "@react-three/fiber": "^8.15.19",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "three": "^0.161.0"
+  }
+}

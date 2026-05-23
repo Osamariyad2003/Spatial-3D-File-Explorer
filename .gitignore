@@ -1,0 +1,12 @@
+node_modules/
+dist/
+*.vsix
+*.vsix.zip
+*.log
+
+# Local Claude / agent state — personal preferences, not for sharing.
+.claude/
+
+# Editor / OS scratch
+.DS_Store
+Thumbs.db
