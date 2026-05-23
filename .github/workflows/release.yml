@@ -38,15 +38,15 @@ jobs:
 
       - name: Publish to VS Code Marketplace
         if: env.VSCE_PAT != ''
-        run: npx vsce publish --no-dependencies --packagePath spatial-3d-file-explorer-${{ steps.ver.outputs.version }}.vsix
+        run: npx vsce publish --no-dependencies --packagePath spatial-3d-file-explorer.vsix
 
       - name: Publish to Open VSX
         if: env.OVSX_PAT != ''
-        run: npx ovsx publish --no-dependencies --packagePath spatial-3d-file-explorer-${{ steps.ver.outputs.version }}.vsix
+        run: npx ovsx publish --no-dependencies --packagePath spatial-3d-file-explorer.vsix
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
           name: v${{ steps.ver.outputs.version }}
           body_path: CHANGELOG.md
-          files: spatial-3d-file-explorer-${{ steps.ver.outputs.version }}.vsix
+          files: spatial-3d-file-explorer.vsix

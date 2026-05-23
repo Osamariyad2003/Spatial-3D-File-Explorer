@@ -1,5 +1,6 @@
 .vscode/**
 .claude/**
+.github/**
 src/**
 webview/**
 node_modules/**
@@ -7,5 +8,7 @@ esbuild.mjs
 tsconfig.json
 tsconfig.webview.json
 .gitignore
+.gitattributes
+DEPLOYING.md
 *.vsix
 **/*.map
