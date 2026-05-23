@@ -3,7 +3,7 @@
   "displayName": "Spatial 3D File Explorer",
   "description": "Real-time 3D node graph of your workspace files and folders — orbit, zoom, search, and click to open.",
   "version": "0.1.0",
-  "publisher": "your-publisher-id",
+  "publisher": "osamariyad2003",
   "license": "MIT",
   "engines": {
     "vscode": "^1.85.0"
@@ -24,12 +24,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/spatial-3d-file-explorer.git"
+    "url": "https://github.com/Osamariyad2003/Spatial-3D-File-Explorer.git"
   },
   "bugs": {
-    "url": "https://github.com/your-username/spatial-3d-file-explorer/issues"
+    "url": "https://github.com/Osamariyad2003/Spatial-3D-File-Explorer/issues"
   },
-  "homepage": "https://github.com/your-username/spatial-3d-file-explorer#readme",
+  "homepage": "https://github.com/Osamariyad2003/Spatial-3D-File-Explorer#readme",
   "main": "./dist/extension.js",
   "activationEvents": [],
   "contributes": {
