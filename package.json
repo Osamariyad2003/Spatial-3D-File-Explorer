@@ -3,7 +3,7 @@
   "displayName": "Spatial 3D File Explorer",
   "description": "Real-time 3D node graph of your workspace files and folders — orbit, zoom, search, and click to open.",
   "version": "0.1.0",
-  "publisher": "osamariyad2003",
+  "publisher": "OsamaRiyad",
   "license": "MIT",
   "engines": {
     "vscode": "^1.85.0"
