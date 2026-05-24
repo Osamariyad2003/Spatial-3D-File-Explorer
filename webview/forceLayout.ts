@@ -14,9 +14,9 @@ const DAMPING = 0.85;
 const ITERATIONS = 240;
 
 /** Z distance between consecutive depth layers (root depth = 0, deeper = further back). */
-const LAYER_Z_GAP = 6;
+const LAYER_Z_GAP = 11;
 /** Strength of the per-depth Z-plane attraction — keeps the graph layered in 3D. */
-const LAYER_PULL = 0.07;
+const LAYER_PULL = 0.11;
 
 function seedZ(node: FileNode, index: number): number {
   const layer = node.depth * LAYER_Z_GAP;

@@ -57,9 +57,9 @@ export function FitCamera({ nodes }: FitCameraProps) {
     const halfFit = aspect < 1 ? radius / aspect : radius;
     const distance = halfFit / Math.tan(fov / 2) + 5;
 
-    // Strong 3/4 perspective tilt — close to isometric so depth is obvious.
-    const dx = 0.75;
-    const dy = 0.85;
+    // Near-isometric tilt — depth is obvious from the first frame.
+    const dx = 0.95;
+    const dy = 1.0;
     const dz = 1;
     const dlen = Math.sqrt(dx * dx + dy * dy + dz * dz);
     persp.position.set(

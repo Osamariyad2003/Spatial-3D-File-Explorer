@@ -74,7 +74,6 @@ export function SphereNode({ node, color, dimmed, highlighted }: SphereNodeProps
       <Html
         position={[0, -(radius + 0.35), 0]}
         center
-        distanceFactor={14}
         zIndexRange={[0, 0]}
         style={{ pointerEvents: 'none' }}
       >
@@ -88,6 +87,7 @@ export function SphereNode({ node, color, dimmed, highlighted }: SphereNodeProps
             textShadow: '0 0 4px rgba(0,0,0,0.85)',
             userSelect: 'none',
             fontWeight: highlighted ? 700 : 400,
+            transform: 'translate(-50%, 4px)',
           }}
         >
           {node.name}

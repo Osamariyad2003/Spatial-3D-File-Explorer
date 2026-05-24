@@ -1,5 +1,6 @@
 {
     "recommendations": [
-        "local-dev.spatial-3d-file-explorer"
+        "local-dev.spatial-3d-file-explorer",
+        "zokugun.vsix-manager"
     ]
 }
