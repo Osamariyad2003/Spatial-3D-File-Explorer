@@ -12,26 +12,32 @@
 
 ---
 
-## Preview
+## Screenshots
 
-![Spatial 3D File Explorer – Repo Map](docs/preview.png)
+### 3D Graph — default view
+![Default 3D graph view](screenshots/png_1.png)
 
-> **Repo Map** — a live summary panel above the graph shows at a glance:
-> `NODES` · `FOLDERS` · `CODE` · `ASSETS`
->
-> The force-directed graph uses colour-coded spheres (see legend below) with
-> drag, scroll-zoom, and click-to-open controls.
->
-> **Legend**
->
-> | Colour | Type       |
-> | ------ | ---------- |
-> | Yellow | Folder     |
-> | Blue   | Code       |
-> | Orange | Asset      |
-> | Green  | Executable |
-> | Purple | Symlink    |
-> | Red    | Missing    |
+The force-directed graph on first load — colour-coded spheres connected by
+curved tubes, free-orbit camera, drag to rotate, scroll to zoom, click to open.
+
+---
+
+### Repo Map — full UI with live stats
+![Repo Map with stats panel](screenshots/png_2.png)
+
+The **Repo Map** header shows live counts (`NODES · FOLDERS · CODE · ASSETS`)
+at all times. The search bar found **5 hits** for "vsc" — matching nodes stay
+bright while everything else dims. The legend in the bottom-left identifies
+each node type.
+
+---
+
+### Search — alternate camera angle
+![Search results from a different orbit](screenshots/png_3.png)
+
+Same search, different orbit angle — demonstrates that the graph is fully
+navigable in 3D while a search filter is active. Matched nodes remain lit;
+unmatched nodes fade, making clusters of results easy to spot spatially.
 
 ---
 
